@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const obj1 = {
+            lenguaje: "java script",
+            framework: "react"
+        };
+
+        const obj2 = obj1; //es el mismo espacio de memoria
+
+        // obj2.lenguaje = "java";
+
+        //spread, copia de otro objeto
+        const obj3 = { ...obj1 }
+        obj3.lenguaje = "java";
+
+        console.log(obj1);
+        console.log(obj2);
+        console.log(obj3);
+
+        //desestructurar
+
+        //const lenguaje = obj1.lenguaje;
+        //const framework = obj1.framework;
+        //tienen el mismo nombre
+        const { lenguaje, framework } = obj1//estraiga la propiedad del lenguaje del obj1
+
+        const func1 = (param) => param.lenguaje + param.framework;
+
+        const func2 = ({lenguaje, framework}) => lenguaje + framework;
+
+        console.log(lenguaje);
+        console.log(framework);
+
+        console.log(func1(obj1));
+
+        console.log(func2(obj1));
+
+        const arra1 = [1,2,3];
+
+        const [uno, dos , tres] = arra1;
+
+        console.log(uno);
+        console.log(dos);
+        console.log(tres);
+
+
+
+    </script>
+</body>
+
+</html>

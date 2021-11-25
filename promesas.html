@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Sincronico, Asincrono
+        //Promesas
+
+        const promesa = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("hola");
+                //peticion al servidor y nos retorna una respuesta
+                const respuesta = 100;
+                resolve(respuesta);
+                //reject("Error en la respuesta");
+            }, 2000)
+            // resolve(1);
+        });
+
+
+        promesa.then((param) => {
+            console.log(param)
+        }).catch((error) => {
+            console.log("Error:" + error);
+        });
+    </script>
+</body>
+
+</html>

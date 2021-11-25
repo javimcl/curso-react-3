@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const url = "https://jsonplaceholder.typicode.com/todos";        
+
+     /*   fetch(url).then((respuesta) => {
+            respuesta.json().then((resp) =>{
+                console.log(resp);
+            })
+            console.log(respuesta.body);
+        })*/
+
+        // En una sola linea
+        fetch(url).then((response) => response.json()).then(respuesta => {
+            console.log(respuesta);
+        }).catch(err => console.log)
+    </script>
+</body>
+</html>

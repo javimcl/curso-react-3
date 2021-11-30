@@ -8,15 +8,19 @@ function App({ name = "React" }) {
 
   const [nombre, setNombre] = useState(name);
 
-  const handleClick = (e) => {
-    console.log("click");
-    setNombre("JAVASCRIPT");
-  }
+  useEffect(() => {
+    return () => {
+      //componente will umnout
+    }
+  }, [nombre]);   //component did update
 
-    return (
+  //setNombre('React');
+
+
+  return (
     <div className="App">
-      <p onClick={handleClick}>Hola {nombre}</p>
-      {/* <RelojFuncion/> */}
+      <p>Hola {nombre}</p>
+      <RelojFuncion/>
     </div>
   );
 }

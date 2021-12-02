@@ -3,8 +3,6 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';//instalar proptypes
 import RelojFuncion from './RelojFuncion';
-import Contenedor from './Contenedor';
-import Campo from './Campo';
 
 function App({ name = "React" }) {
 
@@ -21,27 +19,25 @@ function App({ name = "React" }) {
     setNombre(e.target.value);
   }
 
-  useEffect(() => {
-    setTimeout(() => {
-      setCargando(false);
-    }, 2000);
-  }, [])
+  useEffect(() =>{
+setTimeout(() => {
+  setCargando(false);
+},2000);
+  }, [] )
 
 
 
   return (
     !cargando ?
-      <div className="App">
-        <Contenedor titulo="formula">
-        <Campo nombre={nombre} handleChange={handleChange}/>
+    <div className="App">
+      <input type="text" value={nombre} onChange={handleChange}/>
         {
-          nombre.length > 0 ? <p onClick={handleClick}>Hola {nombre}</p> : <></>
+            nombre.length >  0 ? <p onClick={handleClick}>Hola {nombre}</p>: <></>
         }
-
-        {/* <RelojFuncion/> */}
-        </Contenedor>
-      </div>
-      : <p>Cargando...</p>
+      
+      {/* <RelojFuncion/> */}
+    </div>
+    :<p>Cargando...</p>
   );
 }
 

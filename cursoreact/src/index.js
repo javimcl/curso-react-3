@@ -7,7 +7,7 @@ import AppCicloVida from './AppCicloVida';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App name="Javier" edad={27}/>
+    <App name="" edad={27}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

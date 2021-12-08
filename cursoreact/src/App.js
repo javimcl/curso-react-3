@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';//instalar proptypes
 import RelojFuncion from './RelojFuncion';
 import Contenedor from './Contenedor';
 import Campo from './Campo';
+import Lista from './Lista';
 
 function App({ name = "React" }) {
 
@@ -40,6 +41,7 @@ function App({ name = "React" }) {
 
         {/* <RelojFuncion/> */}
         </Contenedor>
+        <Lista/>
       </div>
       : <p>Cargando...</p>
   );

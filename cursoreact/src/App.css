@@ -1,11 +1,9 @@
 .contenedor{
   padding: 20px;
   border: 2px solid red;
-}
-
-.App {
   text-align: center;
 }
+
 
 .App-logo {
   height: 40vmin;

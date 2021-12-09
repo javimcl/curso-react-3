@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';//instalar proptypes
 import Lista from '../Lista';
-import Saludo from '../Saludo/Saludo';
+import Saludo from '../Saludo';
 
 function App({ name = "React" }) {
 

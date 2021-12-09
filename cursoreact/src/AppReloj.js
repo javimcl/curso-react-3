@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';//instalar proptypes
 import RelojFuncion from './RelojFuncion';
 
-function App({ name = "React" }) {
+function AppReloj({ name = "React" }) {
 
   const [nombre, setNombre] = useState(name);
 
@@ -31,4 +31,4 @@ App.propTypes = {
 }
 
 
-export default App;
+export default AppReloj;

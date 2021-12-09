@@ -4,7 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';//instalar proptypes
 
 //Componente de clase.
-class App extends React.Component {
+class AppComponenteClase extends React.Component {
   constructor(props){
     super(props);
 
@@ -35,4 +35,4 @@ App.propTypes = { // declaracion de tipo de datos
   edad : PropTypes.number
 }
 
-export default App;
+export default AppComponenteClase;

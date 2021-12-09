@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import PropTypes from 'prop-types';//instalar proptypes
-import Reloj from './RelojClase';
+import Reloj from '../Reloj/RelojClase';
 
 //Componente de clase.
 class AppCicloVida extends React.Component {

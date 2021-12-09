@@ -2,9 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';//instalar proptypes
-import RelojFuncion from './RelojFuncion';
+import RelojFuncion from './Reloj/RelojFuncion';
 
-function App({ name = "React" }) {
+function AppPasarValores({ name = "React" }) {
 
   const [nombre, setNombre] = useState(name);
 
@@ -16,6 +16,8 @@ function App({ name = "React" }) {
   const handleChange = e => {
     setNombre(e.target.value);
   }
+
+  
 
     return (
     <div className="App">
@@ -32,4 +34,4 @@ App.propTypes = {
 }
 
 
-export default App;
+export default AppPasarValores;
